@@ -91,3 +91,13 @@ python predict.py --recog_model ycchen/TrOCR-base-ver021-v1 --source ./datasets/
 ```
 python ./utils/redraw.py
 ```
+
+
+
+## Result
+
+- D503 Dataset
+
+<img src="./fig/000203.png" alt="image" style="width:80%;" />
+
+<img src="./fig/000250.png" alt="image" style="width:80%;" />
