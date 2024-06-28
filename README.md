@@ -45,7 +45,7 @@ Please organize your data as follow:
 
 ## Checkpoint
 
-1. Download SRFormer ckeckpoint from [here](https://140.112.90.30:5001/sharing/MaSB5tXzr) and place in './output/d503'
+1. Download SRFormer ckeckpoint from [here](https://140.112.90.30:5001/sharing/MaSB5tXzr) and place in 'SRFormer-Text-Det/output/d503'
 
 ## SRFormer
 

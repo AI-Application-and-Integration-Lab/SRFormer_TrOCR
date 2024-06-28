@@ -1,4 +1,5 @@
-datasets/
+datasets/d503/
+datasets/d503_SRFormer_format/
 final/
 SRFormer-Text-Det/visualize/
 SRFormer-Text-Det/tmp_crop/
