@@ -22,10 +22,6 @@ cd SRFormer-Text-Detection
 python setup.py build develop
 ```
 
-2. TROCR
-
-- 
-
 ## Dataset
 
 Please download following dataset, and place in 'datasets' folder.
@@ -47,9 +43,7 @@ Please organize your data as follow:
 
 ## Checkpoint
 
-1. Download SRFormer ckeckpoint from XXX and place in XXX
-
-2. 
+1. Download SRFormer ckeckpoint from [here](https://140.112.90.30:5001/sharing/MaSB5tXzr) and place in './output/d503'
 
 ## SRFormer
 
