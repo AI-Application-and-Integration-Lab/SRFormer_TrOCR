@@ -24,13 +24,11 @@ python setup.py build develop
 
 ## Dataset
 
-Please download following dataset, and place in 'datasets' folder.
+Please download following dataset, and place in 'datasets' folder. (please create datasets folder)
 
 1. [D503](https://140.112.90.30:5001/sharing/pcwwGDeo7) 
 
-2. [NTU Scene](https://140.112.90.30:5001/sharing/pcwwGDeo7)
-
-
+2. [NTU Scene](https://140.112.90.30:5001/sharing/0jU1Rsthg)
 
 Please organize your data as follow:
 ```
