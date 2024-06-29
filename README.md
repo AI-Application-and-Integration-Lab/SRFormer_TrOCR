@@ -83,13 +83,13 @@ python ./utils/srformer_trocr_transform.py  --source ./SRFormer-Text-Det/visuali
 2. Recognize
 
 ```
-python predict.py --recog_model ycchen/TrOCR-base-ver021-v1 --source ./datasets/d503/test/images --save-conf --font ./utils/NotoSansTC-VariableFont_wght.ttf --output ./TrOCR/output --name d503 --nosave
+python predict.py --recog_model ycchen/TrOCR-base-ver021-v1 --source ./datasets/d503/test/images --save-conf --font ./utils/NotoSansTC-VariableFont_wght.ttf --output ./TrOCR/output --name d503 --nosave --detection_result ./SRFormer-Text-Det/visualize/d503/trocr.json
 ```
 
 3. Visualize
 
 ```
-python ./utils/redraw.py
+python ./utils/redraw.py --image './datasets/d503/test/images' --label './TrOCR/output/d503/labels' --final "./d503"
 ```
 
 

@@ -10,7 +10,7 @@ def main(opt):
     # # Detect text
     # all_bboxes = yolov7.run()
     
-    f = open("/work/weihua9217/Det+Deblur/SRFormer_TrOCR/SRFormer-Text-Det/visualize/d503/trocr.json")
+    f = open(opt.detection_result)
     all_bboxes = json.load(f)
     
     # os.chdir('../')
@@ -44,6 +44,7 @@ if __name__ == '__main__':
     parser.add_argument('--name', default='exp', help='save results to project/name')
     parser.add_argument('--exist-ok', action='store_true', help='existing project/name ok, do not increment')
     parser.add_argument('--no-trace', action='store_true', help='don`t trace model')
+    parser.add_argument('--detection_result', type=str, default='', help='source')
 
     parser.add_argument('--output', type=str, default='output', help='output folder')
     parser.add_argument('--font', type=str, default='', help='font path')

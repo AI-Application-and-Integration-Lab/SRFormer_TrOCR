@@ -71,6 +71,7 @@ def get_parser():
 if __name__ == "__main__":
     mp.set_start_method("spawn", force=True)
     args = get_parser().parse_args()
+    os.makedirs(args.output, exist_ok=True)
     logger = setup_logger()
     logger.info("Arguments: " + str(args))
 

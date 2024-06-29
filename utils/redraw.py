@@ -4,15 +4,24 @@ import json
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 from pathlib import Path
+import argparse
 
-img_folder_path = './datasets/d503_SRFormer_format/test'
-label_path = "./TrOCR/output/d503/labels"
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--image', type=str, default='./datasets/d503_SRFormer_format/test', help='source') 
+parser.add_argument('--label', type=str, default="./TrOCR/output/d503/labels", help='source') 
+parser.add_argument('--final', type=str, default="./d503_final", help='source') 
+opt = parser.parse_args()
+
+img_folder_path = opt.image   # './datasets/d503_SRFormer_format/test'
+label_path = opt.label        # "./TrOCR/output/d503/labels"
+
 
 folder = os.listdir(label_path)
 
 print(len(folder))
 
-redraw_path = "./d503_final"
+redraw_path = opt.final
 os.makedirs(redraw_path, exist_ok=True)
 # font = "./utils/NotoSansTC-VariableFont_wght.ttf"
 font = ImageFont.truetype("./utils/NotoSansTC-VariableFont_wght.ttf", 16)
