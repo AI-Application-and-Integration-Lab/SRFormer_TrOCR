@@ -68,7 +68,7 @@ CUDA_VISIBLE_DEVICES=0 python tools/train_net.py --config-file ./configs/SRForme
 4. Visualization
 ```
 cd SRFormer-Text-Det
-python demo/demo.py --config-file ./configs/SRFormer/d503/R_50_poly.yaml --input '../datasets/d503/test/images' --output './visualize/d503/' --opts MODEL.WEIGHTS '/work/weihua9217/Det+Deblur/Scene_advance/SRFormer-Text-Det/output/r_50_poly_finetune/d503_string/tune/model_final.pth'
+python demo/demo.py --config-file ./configs/SRFormer/d503/R_50_poly.yaml --input '../datasets/d503/test/images' --output './visualize/d503/' --opts MODEL.WEIGHTS './output/d503/model_final.pth'
 ```
 
 

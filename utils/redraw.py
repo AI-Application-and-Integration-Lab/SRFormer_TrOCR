@@ -12,10 +12,10 @@ folder = os.listdir(label_path)
 
 print(len(folder))
 
-redraw_path = "./final"
+redraw_path = "./d503_final"
 os.makedirs(redraw_path, exist_ok=True)
-font = "./utils/NotoSansTC-VariableFont_wght.ttf"
-
+# font = "./utils/NotoSansTC-VariableFont_wght.ttf"
+font = ImageFont.truetype("./utils/NotoSansTC-VariableFont_wght.ttf", 16)
 for name in folder:
    
    f = open(os.path.join(label_path, name))
@@ -34,9 +34,13 @@ for name in folder:
 
       text = data["shapes"][i]['label']
       image_pil = Image.fromarray(img)
+      position = (int(bbox[0]) - 20, int(bbox[1]) - 20)
+      
       draw = ImageDraw.Draw(image_pil)
-      draw.text((int(bbox[0]) - 20, int(bbox[1]) - 20), text, 
-            font=ImageFont.truetype(str(Path(font)), 16), fill=(0,0,255))
+      bbox = draw.textbbox(position, text, font)
+      
+      draw.rectangle(bbox, fill=(0,0,255,128))
+      draw.text(position, text, font=font, fill=(0,0,0))
       
       img = np.array(image_pil)
 
