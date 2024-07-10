@@ -68,5 +68,4 @@ class TrOCRRunner:
             
             all_labels[img_name] = labels
             
-        
         return all_labels

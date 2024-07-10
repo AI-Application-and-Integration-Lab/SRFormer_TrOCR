@@ -5,18 +5,19 @@ DATASETS:
   TEST: ("d503_test",) 
 
 MODEL:
-  WEIGHTS: "./checkpoint/totaltext-srformer-3seg.pth" 
+  # WEIGHTS: "./checkpoint/totaltext-srformer-3seg.pth" 
   # WEIGHTS: "./output/d503/model_final.pth"
+  WEIGHTS: './output/d503_0702/model_best.pth'
 SOLVER:
   IMS_PER_BATCH: 1
   BASE_LR: 1e-4
   LR_BACKBONE: 1e-5
   WARMUP_ITERS: 0
   STEPS: (24000,)
-  MAX_ITER: 30000
+  MAX_ITER: 60000
   CHECKPOINT_PERIOD: 100000 # No ckpt
 
 TEST:
   EVAL_PERIOD: 100000
 
-OUTPUT_DIR: "output/d503/"
+OUTPUT_DIR: "output/d503_0702_2/"

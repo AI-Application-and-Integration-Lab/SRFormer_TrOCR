@@ -23,7 +23,8 @@ def increment_path(path, exist_ok=True, sep=''):
     
 
 def save_result(opt, all_labels):
-    save_dir = Path(increment_path(Path(os.path.join(opt.output, opt.name)), exist_ok=opt.exist_ok))  # increment run
+
+    save_dir = Path(Path(os.path.join(opt.output, opt.name), exist_ok=opt.exist_ok))  # increment run
     (save_dir / 'labels').mkdir(parents=True, exist_ok=True)  # make dir
 
     # Save json
