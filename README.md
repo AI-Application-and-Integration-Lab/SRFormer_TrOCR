@@ -92,6 +92,14 @@ python predict.py --recog_model ycchen/TrOCR-base-ver021-v1 --source ./datasets/
 python ./utils/redraw.py --image './datasets/d503/test/images' --label './TrOCR/output/d503/labels' --final "./d503"
 ```
 
+4. Retrieval
+
+
+```
+run retrieval.ipynb
+```
+
+
 
 
 ## Result
@@ -101,3 +109,5 @@ python ./utils/redraw.py --image './datasets/d503/test/images' --label './TrOCR/
 <img src="./fig/000203.png" alt="image" style="width:80%;" />
 
 <img src="./fig/000250.png" alt="image" style="width:80%;" />
+
+
