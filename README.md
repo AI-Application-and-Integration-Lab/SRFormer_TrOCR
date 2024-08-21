@@ -1,5 +1,6 @@
 
-# NTU-AI-Scene-Text: Scene Text Detection and Recognition
+# Scene Text Detection and Recognition model and Retrevial (Train on real data)
+
 
 - Detection Model : (AAAI24) SRFormer
 - Recognition Model : (AAAI23) TROCR 
